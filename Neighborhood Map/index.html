@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <style>
+    html,
+    body {
+      font-family: Arial, sans-serif;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      height: 100%;
+      position: relative;
+    }
+    #map {
+      height: 100%;
+      position: relative;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="position-relative" style="background-color: rgb(140, 78, 184)">
+    <div class="collapse" id="navbarToggleExternalContent">
+      <div class="p-4">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Restaurants
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" data-bind="foreach: markers">
+                  <a class="dropdown-item" href="#" data-bind="text:title, click: setRestaurant"></a>
+                </div>
+          <div class="dropleft float-right">
+            <button class="btn btn-info btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Filter
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" id="filter-1" href="#">American Chinese</a>
+              <a class="dropdown-item" id="filter-2" href="#">Traditional Chinese</a>
+              <a class="dropdown-item" id="filter-3" href="#">Chinese-Japanese Fusion</a>
+              <a class="dropdown-item" id="filter-4" href="#">Other East Asian</a>
+            </div>
+          </div>
+        </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-dark fixed-bottom" style="background-color: rgb(140, 78, 184)">
+      <h1 class="navbar-text lead">Binghamton Chinese Cuisine</h1>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav>
+  </div>
+  <div class="container">
+    <div id="map"></div>
+  </div>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?libraries=places,geometry,drawing&key=AIzaSyAsa857gGQAErl5-tHzgxGHH1rgv1AybI0&v=3&callback=initMap">
+  </script>
+  <script src='js/map.js'></script>
+  <script scr='js/lib/knockout.js'></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
