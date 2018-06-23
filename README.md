@@ -15,7 +15,7 @@ Open index.html inside of a modern web browser
 ```
 ### Using Your Own API keys
 
-API calls are usually limited to a certain number of calls per day, depending on the API provider and any potential plans offered by said providers. To got around the limits of my developer account, you can use your own API keys by making a few simple tweaks.
+API calls are usually limited to a certain number of calls per day, depending on the API provider and any potential plans offered by said providers. To get around the limits of my developer account, you can use your own API keys by making a few simple tweaks.
 
 Step One
 ```
@@ -23,8 +23,8 @@ Create an account with the provider of your API key
 ```
 In this case we have both the Google Maps API and the Four Square API.
 ```
-Google: https://console.cloud.google.com
-Four Square: https://developer.foursquare.com/
+[Google](https://console.cloud.google.com)
+[Four Square](https://developer.foursquare.com/)
 ```
 With an account we can now get our own API keys and insert them into our code.
 
@@ -43,9 +43,9 @@ var restaurant_tips = 'https://api.foursquare.com/v2/venues/' + marker.FS_id + '
 
 * Udacity FullStack Nanodegree Program
 * Udacity Discourse Forum
-* Official Google Maps API Documentation
-* Official FourSquare API Documentation
-* Official Knockout.js Documentation
+* [Official Google Maps API Documentation](https://developers.google.com/maps/documentation/)
+* [Official FourSquare API Documentation](https://developer.foursquare.com/docs)
+* [Official Knockout.js Documentation](http://knockoutjs.com/)
 * [Knockout Filtering an Observable Array](https://stackoverflow.com/questions/20857594/knockout-filtering-on-observable-array)
 * Udacity JQuery Course
 * Udacity Javascript Course
