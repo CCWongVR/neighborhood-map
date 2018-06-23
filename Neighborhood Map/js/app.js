@@ -5,6 +5,7 @@ viewModel = function () {
   self.filteredMarkers = ko.observableArray();
   // Filter ID observable to filter our observable array on user input
   self.filter_id = ko.observable(0);
+  self.listView = ko.observableArray();
   // Initializes the map
   initMap = function () {
     // Google Map stylings
@@ -341,13 +342,12 @@ viewModel = function () {
     self.filterMarkers = ko.computed(function () {
       var bounds = new google.maps.LatLngBounds();
       self.filterM = self.filteredMarkers();
-      self.listView = ko.observableArray();
 
       if (self.filter_id() == 0) {
         for (var i = 0; i < self.filterM.length; i++) {
           self.filterM[i].setVisible(true);
           bounds.extend(self.filterM[i].position);
-          self.listView().push(self.filterM[i]);
+          self.listView.push(self.filterM[i]);
           console.log(self.listView().length);
         }
       }
@@ -359,7 +359,7 @@ viewModel = function () {
             self.filterM[i].setVisible(true);
             bounds.extend(self.filterM[i].position);
             console.log(self.filterM[i]);
-            self.listView().push(self.filterM[i]);
+            self.listView.push(self.filterM[i]);
             console.log(self.listView().length);
           }
           if (self.filter_id() !== self.filterM[i].category) {
@@ -387,5 +387,5 @@ viewModel = function () {
   };
   initMap();
 };
-var vm = viewModel();
+var vm =  new viewModel();
 ko.applyBindings(vm);
