@@ -43,12 +43,12 @@ var restaurant_tips = 'https://api.foursquare.com/v2/venues/' + marker.FS_id + '
 ```
 ## Acknowledgments
 
-* Udacity FullStack Nanodegree Program
-* Udacity Discourse Forum
+* [Udacity FullStack Nanodegree Program](https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004)
+* [Udacity Discourse Forum](https://discussions.udacity.com/)
 * [Official Google Maps API Documentation](https://developers.google.com/maps/documentation/)
 * [Official FourSquare API Documentation](https://developer.foursquare.com/docs)
 * [Official Knockout.js Documentation](http://knockoutjs.com/)
 * [Knockout Filtering an Observable Array](https://stackoverflow.com/questions/20857594/knockout-filtering-on-observable-array)
-* Udacity JQuery Course
-* Udacity Javascript Course
-* Udacity Object Oriented Javascript Course
+* [Udacity JQuery Course](https://www.udacity.com/course/intro-to-jquery--ud245)
+* [Udacity Javascript Course](https://www.udacity.com/course/intro-to-javascript--ud803)
+* [Udacity Object Oriented Javascript Course](https://www.udacity.com/course/object-oriented-javascript--ud015)
