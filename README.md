@@ -22,10 +22,10 @@ Step One
 Create an account with the provider of your API key
 ```
 In this case we have both the Google Maps API and the Four Square API.
-```
+
 [Google](https://console.cloud.google.com)
 [Four Square](https://developer.foursquare.com/)
-```
+
 With an account we can now get our own API keys and insert them into our code.
 
 Google API is initialized in index.html with a script source. We can insert our newly acquired key here where I've written INSERT_KEY_HERE
