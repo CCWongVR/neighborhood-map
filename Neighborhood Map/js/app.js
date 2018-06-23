@@ -349,19 +349,15 @@ viewModel = function () {
           self.filterM[i].setVisible(true);
           bounds.extend(self.filterM[i].position);
           self.listView.push(self.filterM[i]);
-          console.log(self.listView().length);
         }
       }
       else {
         self.listView.removeAll();
-        console.log(self.listView().length);
         for (var i = 0; i < self.filterM.length; i++) {
           if (self.filter_id() == self.filterM[i].category) {
             self.filterM[i].setVisible(true);
             bounds.extend(self.filterM[i].position);
-            console.log(self.filterM[i]);
             self.listView.push(self.filterM[i]);
-            console.log(self.listView().length);
           }
           if (self.filter_id() !== self.filterM[i].category) {
             self.filterM[i].setVisible(false);
