@@ -276,7 +276,7 @@ viewModel = function () {
         });
       // Pushes generated marker to aur array
       self.filteredMarkers().push(self.marker);
-
+      // Shows markers on map
       showMarkers = function () {
         var bounds = new google.maps.LatLngBounds();
         for (var i = 0; i < self.filteredMarkers().length; i++) {
@@ -339,6 +339,7 @@ viewModel = function () {
     }
     showMarkers();
     
+    // Filters markers based on current filter on map and in list
     self.filterMarkers = ko.computed(function () {
       var bounds = new google.maps.LatLngBounds();
       self.filterM = self.filteredMarkers();
@@ -372,6 +373,7 @@ viewModel = function () {
     });
 
   }
+  // Opens info window and animates when clicking list item
   self.openListWindow = function(){
     var marker = this;
     self.populateInfoWindow(this, largeInfowindow);
@@ -381,7 +383,7 @@ viewModel = function () {
   }, 750);
   };
 
-
+  // Sets filter observable  to clicked filter from UI
   self.filter = function (category) {
     self.filter_id(category);
   };
