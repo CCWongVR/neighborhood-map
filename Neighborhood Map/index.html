@@ -33,7 +33,7 @@
                   Restaurants
               </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" data-bind="foreach: listView">
-                  <a class="dropdown-item" href="#" data-bind="text: title, click: openListWindow"></a>
+                  <a class="dropdown-item" href="#" data-bind="text: title, click: $parent.openListWindow"></a>
                 </ul>
           <div class="dropleft float-right">
             <button class="btn btn-info btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
