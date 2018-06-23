@@ -1,6 +1,6 @@
 # Neighborhood Map
 
-Tis is a neighborhood map utilizing Google Maps API and FourSquare API to display the location and reviews of Chinese Restaurants in the Greater Binghamton Area, complete with a filter to further filter by type of cuisine.
+This is a neighborhood map utilizing Google Maps API and FourSquare API to display the location and reviews of Chinese Restaurants in the Greater Binghamton Area, complete with a filter to further filter by type of cuisine.
 
 ## Getting Started
 
