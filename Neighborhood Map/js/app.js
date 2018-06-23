@@ -383,6 +383,9 @@ viewModel = function () {
   self.filter = function (category) {
     self.filter_id(category);
   };
+  window.googleError = function(){
+    alert("An error while loading Google Maps occurred, please try to reload the page.");
+};
   initMap();
 };
 var vm =  new viewModel();
