@@ -17,7 +17,6 @@ Open index.html inside of a modern web browser
 
 API calls are usually limited to a certain number of calls per day, depending on the API provider and any potential plans offered by said providers. To get around the limits of my developer account, you can use your own API keys by making a few simple tweaks.
 
-####Step One
 ```
 Create an account with the provider of your API key
 ```
@@ -28,8 +27,6 @@ In this case we have both the Google Maps API and the Four Square API.
 [Four Square](https://developer.foursquare.com/)
 
 With an account we can now get our own API keys and insert them into our code.
-
-####Step Two
 
 Google API is initialized in index.html with a script source. We can insert our newly acquired key here where I've written INSERT_KEY_HERE
 ```
